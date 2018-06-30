@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="41029" started-at="2018-06-30T06:05:55Z" finished-at="2018-06-30T06:06:36Z">
+    <groups>
+    </groups>
+    <test name="TestWithChrome" duration-ms="24284" started-at="2018-06-30T06:05:55Z" finished-at="2018-06-30T06:06:20Z">
+      <class name="com.QA.Test1">
+        <test-method status="PASS" signature="ParallelTestExecute(java.lang.String)[pri:0, instance:com.QA.Test1@2c9f9fb0]" name="ParallelTestExecute" is-config="true" duration-ms="11562" started-at="2018-06-30T06:05:55Z" finished-at="2018-06-30T06:06:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParallelTestExecute -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.QA.Test1@2c9f9fb0]" name="setup" duration-ms="12679" started-at="2018-06-30T06:06:07Z" finished-at="2018-06-30T06:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.QA.Test1 -->
+    </test> <!-- TestWithChrome -->
+    <test name="TestWithFirefox" duration-ms="41029" started-at="2018-06-30T06:05:55Z" finished-at="2018-06-30T06:06:36Z">
+      <class name="com.QA.Test1">
+        <test-method status="PASS" signature="ParallelTestExecute(java.lang.String)[pri:0, instance:com.QA.Test1@60addb54]" name="ParallelTestExecute" is-config="true" duration-ms="31356" started-at="2018-06-30T06:05:55Z" finished-at="2018-06-30T06:06:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParallelTestExecute -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.QA.Test1@60addb54]" name="setup" duration-ms="9649" started-at="2018-06-30T06:06:27Z" finished-at="2018-06-30T06:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.QA.Test1 -->
+    </test> <!-- TestWithFirefox -->
+  </suite> <!-- Suite -->
+</testng-results>
