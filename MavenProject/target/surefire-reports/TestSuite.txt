@@ -1,4 +1,63 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.677 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 61.133 s <<< FAILURE! - in TestSuite
+ParallelTestExecute(com.QA.Test1)  Time elapsed: 40.317 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+multiprocessCompatible":false,"signedState":0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {"id":"mozilla_cc@internetdownloadmanager.com","syncGUID":"zaough2VGV0U","location":"winreg-app-user","version":"5.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"IDM CC","description":"Internet Download Manager integration module for Mozilla","creator":"IDM development department of Tonec Inc.","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":true,"descriptor":"C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2","installDate":1463223652418,"updateDate":1463223652418,"applyBackgroundUpdates":1,"bootstrap":false,"size":127291,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"0.9","maxVersion":"3.9"},{"id":"{86c18b42-e466-45a9-ae7a-9b95ba6f5640}","minVersion":"1.7","maxVersion":"2.9"},{"id":"{3db10fab-e461-4c80-8b97-957ad5f8ea47}","minVersion":"8.0","maxVersion":"9.9"},{"id":"{a463f10c-3994-11da-9945-000d60ca027b}","minVersion":"0.4+","maxVersion":"2.0+"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"Ri3XyuHvjMRe","location":"app-global","version":"43.0.1","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","installDate":1528043928562,"updateDate":1528043928562,"applyBackgroundUpdates":1,"skinnable":true,"size":24172,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"43.0.1","maxVersion":"43.0.1"}],"targetPlatforms":[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1530340880622	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Amit-PC', ip: '192.168.17.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: FirefoxDriver
+Caused by: org.openqa.selenium.firefox.NotConnectedException: 
+Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+multiprocessCompatible":false,"signedState":0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {"id":"mozilla_cc@internetdownloadmanager.com","syncGUID":"zaough2VGV0U","location":"winreg-app-user","version":"5.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"IDM CC","description":"Internet Download Manager integration module for Mozilla","creator":"IDM development department of Tonec Inc.","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":true,"descriptor":"C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2","installDate":1463223652418,"updateDate":1463223652418,"applyBackgroundUpdates":1,"bootstrap":false,"size":127291,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"0.9","maxVersion":"3.9"},{"id":"{86c18b42-e466-45a9-ae7a-9b95ba6f5640}","minVersion":"1.7","maxVersion":"2.9"},{"id":"{3db10fab-e461-4c80-8b97-957ad5f8ea47}","minVersion":"8.0","maxVersion":"9.9"},{"id":"{a463f10c-3994-11da-9945-000d60ca027b}","minVersion":"0.4+","maxVersion":"2.0+"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"Ri3XyuHvjMRe","location":"app-global","version":"43.0.1","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","installDate":1528043928562,"updateDate":1528043928562,"applyBackgroundUpdates":1,"skinnable":true,"size":24172,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"43.0.1","maxVersion":"43.0.1"}],"targetPlatforms":[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1530340880622	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+
+

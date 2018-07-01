@@ -19,13 +19,13 @@ public class CrossBrowserTest {
 		if(Browser.equalsIgnoreCase("Firefox"))
 				{
 					driver=new FirefoxDriver();
-					System.out.println("Firefox open");
+					System.out.println("Firefox browser open");
 				}
 		else if(Browser.equalsIgnoreCase("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "E:\\Automation jar files\\Driver files\\chromedriver.exe");
 			driver=new ChromeDriver();
-			System.out.println("Chrome open");
+			System.out.println("Chrome browser open");
 		}
 	}
 	

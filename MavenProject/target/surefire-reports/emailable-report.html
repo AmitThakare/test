@@ -9,14 +9,153 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">TestWithChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">24,284</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestWithFirefox</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">41,029</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">65,313</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TestWithChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">56,710</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestWithFirefox</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">56,260</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">112,970</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestWithChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.QA.Test1</td><td><a href="#m0">setup</a></td><td rowspan="1">1530338767326</td><td rowspan="1">12679</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestWithFirefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.QA.Test1</td><td><a href="#m1">setup</a></td><td rowspan="1">1530338787105</td><td rowspan="1">9649</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestWithChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.QA.Test1</td><td><a href="#m0">setup</a></td><td rowspan="1">1530340850286</td><td rowspan="1">40769</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestWithFirefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.QA.Test1</td><td><a href="#m1">ParallelTestExecute</a></td><td rowspan="1">1530340834372</td><td rowspan="1">55991</td></tr><tr><th colspan="4">TestWithFirefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.QA.Test1</td><td><a href="#m2">setup</a></td><td rowspan="1">1530340890599</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>TestWithChrome</h2><h3 id="m0">com.QA.Test1#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestWithFirefox</h2><h3 id="m1">com.QA.Test1#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestWithFirefox</h2><h3 id="m1">com.QA.Test1#ParallelTestExecute</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;mozilla_cc@internetdownloadmanager.com&quot;,&quot;syncGUID&quot;:&quot;zaough2VGV0U&quot;,&quot;location&quot;:&quot;winreg-app-user&quot;,&quot;version&quot;:&quot;5.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;IDM CC&quot;,&quot;description&quot;:&quot;Internet Download Manager integration module for Mozilla&quot;,&quot;creator&quot;:&quot;IDM development department of Tonec Inc.&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2&quot;,&quot;installDate&quot;:1463223652418,&quot;updateDate&quot;:1463223652418,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:127291,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;0.9&quot;,&quot;maxVersion&quot;:&quot;3.9&quot;},{&quot;id&quot;:&quot;{86c18b42-e466-45a9-ae7a-9b95ba6f5640}&quot;,&quot;minVersion&quot;:&quot;1.7&quot;,&quot;maxVersion&quot;:&quot;2.9&quot;},{&quot;id&quot;:&quot;{3db10fab-e461-4c80-8b97-957ad5f8ea47}&quot;,&quot;minVersion&quot;:&quot;8.0&quot;,&quot;maxVersion&quot;:&quot;9.9&quot;},{&quot;id&quot;:&quot;{a463f10c-3994-11da-9945-000d60ca027b}&quot;,&quot;minVersion&quot;:&quot;0.4+&quot;,&quot;maxVersion&quot;:&quot;2.0+&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;Ri3XyuHvjMRe&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;43.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1528043928562,&quot;updateDate&quot;:1528043928562,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24172,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;43.0.1&quot;,&quot;maxVersion&quot;:&quot;43.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1530340880622	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Amit-PC&apos;, ip: &apos;192.168.17.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.QA.CrossBrowserTest.ParallelTestExecute(CrossBrowserTest.java:21)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;mozilla_cc@internetdownloadmanager.com&quot;,&quot;syncGUID&quot;:&quot;zaough2VGV0U&quot;,&quot;location&quot;:&quot;winreg-app-user&quot;,&quot;version&quot;:&quot;5.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;IDM CC&quot;,&quot;description&quot;:&quot;Internet Download Manager integration module for Mozilla&quot;,&quot;creator&quot;:&quot;IDM development department of Tonec Inc.&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2&quot;,&quot;installDate&quot;:1463223652418,&quot;updateDate&quot;:1463223652418,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:127291,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;0.9&quot;,&quot;maxVersion&quot;:&quot;3.9&quot;},{&quot;id&quot;:&quot;{86c18b42-e466-45a9-ae7a-9b95ba6f5640}&quot;,&quot;minVersion&quot;:&quot;1.7&quot;,&quot;maxVersion&quot;:&quot;2.9&quot;},{&quot;id&quot;:&quot;{3db10fab-e461-4c80-8b97-957ad5f8ea47}&quot;,&quot;minVersion&quot;:&quot;8.0&quot;,&quot;maxVersion&quot;:&quot;9.9&quot;},{&quot;id&quot;:&quot;{a463f10c-3994-11da-9945-000d60ca027b}&quot;,&quot;minVersion&quot;:&quot;0.4+&quot;,&quot;maxVersion&quot;:&quot;2.0+&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;Ri3XyuHvjMRe&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;43.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1528043928562,&quot;updateDate&quot;:1528043928562,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24172,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;43.0.1&quot;,&quot;maxVersion&quot;:&quot;43.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1530340880622	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 28 more
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.QA.Test1#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;mozilla_cc@internetdownloadmanager.com&quot;,&quot;syncGUID&quot;:&quot;zaough2VGV0U&quot;,&quot;location&quot;:&quot;winreg-app-user&quot;,&quot;version&quot;:&quot;5.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;IDM CC&quot;,&quot;description&quot;:&quot;Internet Download Manager integration module for Mozilla&quot;,&quot;creator&quot;:&quot;IDM development department of Tonec Inc.&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2&quot;,&quot;installDate&quot;:1463223652418,&quot;updateDate&quot;:1463223652418,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:127291,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;0.9&quot;,&quot;maxVersion&quot;:&quot;3.9&quot;},{&quot;id&quot;:&quot;{86c18b42-e466-45a9-ae7a-9b95ba6f5640}&quot;,&quot;minVersion&quot;:&quot;1.7&quot;,&quot;maxVersion&quot;:&quot;2.9&quot;},{&quot;id&quot;:&quot;{3db10fab-e461-4c80-8b97-957ad5f8ea47}&quot;,&quot;minVersion&quot;:&quot;8.0&quot;,&quot;maxVersion&quot;:&quot;9.9&quot;},{&quot;id&quot;:&quot;{a463f10c-3994-11da-9945-000d60ca027b}&quot;,&quot;minVersion&quot;:&quot;0.4+&quot;,&quot;maxVersion&quot;:&quot;2.0+&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;Ri3XyuHvjMRe&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;43.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1528043928562,&quot;updateDate&quot;:1528043928562,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24172,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;43.0.1&quot;,&quot;maxVersion&quot;:&quot;43.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1530340880622	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Amit-PC&apos;, ip: &apos;192.168.17.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.QA.CrossBrowserTest.ParallelTestExecute(CrossBrowserTest.java:21)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;mozilla_cc@internetdownloadmanager.com&quot;,&quot;syncGUID&quot;:&quot;zaough2VGV0U&quot;,&quot;location&quot;:&quot;winreg-app-user&quot;,&quot;version&quot;:&quot;5.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;IDM CC&quot;,&quot;description&quot;:&quot;Internet Download Manager integration module for Mozilla&quot;,&quot;creator&quot;:&quot;IDM development department of Tonec Inc.&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2&quot;,&quot;installDate&quot;:1463223652418,&quot;updateDate&quot;:1463223652418,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:127291,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;0.9&quot;,&quot;maxVersion&quot;:&quot;3.9&quot;},{&quot;id&quot;:&quot;{86c18b42-e466-45a9-ae7a-9b95ba6f5640}&quot;,&quot;minVersion&quot;:&quot;1.7&quot;,&quot;maxVersion&quot;:&quot;2.9&quot;},{&quot;id&quot;:&quot;{3db10fab-e461-4c80-8b97-957ad5f8ea47}&quot;,&quot;minVersion&quot;:&quot;8.0&quot;,&quot;maxVersion&quot;:&quot;9.9&quot;},{&quot;id&quot;:&quot;{a463f10c-3994-11da-9945-000d60ca027b}&quot;,&quot;minVersion&quot;:&quot;0.4+&quot;,&quot;maxVersion&quot;:&quot;2.0+&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;Ri3XyuHvjMRe&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;43.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1528043928562,&quot;updateDate&quot;:1528043928562,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24172,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;43.0.1&quot;,&quot;maxVersion&quot;:&quot;43.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1530340880622	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 28 more
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

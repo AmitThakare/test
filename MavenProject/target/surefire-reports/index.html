@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.QA.Test1" hash-for-method="setup">setup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.QA.Test1" hash-for-method="setup">setup</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.QA.Test1" hash-for-method="setup">setup</a> <!-- method navigator-link -->
@@ -122,9 +131,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.QA.Test1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,8 +142,87 @@
                   <a name="setup">
                   </a> <!-- setup -->
                   <span class="method-name">setup</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;mozilla_cc@internetdownloadmanager.com&quot;,&quot;syncGUID&quot;:&quot;zaough2VGV0U&quot;,&quot;location&quot;:&quot;winreg-app-user&quot;,&quot;version&quot;:&quot;5.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;IDM CC&quot;,&quot;description&quot;:&quot;Internet Download Manager integration module for Mozilla&quot;,&quot;creator&quot;:&quot;IDM development department of Tonec Inc.&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2&quot;,&quot;installDate&quot;:1463223652418,&quot;updateDate&quot;:1463223652418,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:127291,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;0.9&quot;,&quot;maxVersion&quot;:&quot;3.9&quot;},{&quot;id&quot;:&quot;{86c18b42-e466-45a9-ae7a-9b95ba6f5640}&quot;,&quot;minVersion&quot;:&quot;1.7&quot;,&quot;maxVersion&quot;:&quot;2.9&quot;},{&quot;id&quot;:&quot;{3db10fab-e461-4c80-8b97-957ad5f8ea47}&quot;,&quot;minVersion&quot;:&quot;8.0&quot;,&quot;maxVersion&quot;:&quot;9.9&quot;},{&quot;id&quot;:&quot;{a463f10c-3994-11da-9945-000d60ca027b}&quot;,&quot;minVersion&quot;:&quot;0.4+&quot;,&quot;maxVersion&quot;:&quot;2.0+&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;Ri3XyuHvjMRe&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;43.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1528043928562,&quot;updateDate&quot;:1528043928562,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24172,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;43.0.1&quot;,&quot;maxVersion&quot;:&quot;43.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1530340880622	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Amit-PC&apos;, ip: &apos;192.168.17.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.QA.CrossBrowserTest.ParallelTestExecute(CrossBrowserTest.java:21)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1530340859429	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1530340859455	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;mozilla_cc@internetdownloadmanager.com&quot;,&quot;syncGUID&quot;:&quot;zaough2VGV0U&quot;,&quot;location&quot;:&quot;winreg-app-user&quot;,&quot;version&quot;:&quot;5.0&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;IDM CC&quot;,&quot;description&quot;:&quot;Internet Download Manager integration module for Mozilla&quot;,&quot;creator&quot;:&quot;IDM development department of Tonec Inc.&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\Users\\Amit\\AppData\\Roaming\\IDM\\idmmzcc2&quot;,&quot;installDate&quot;:1463223652418,&quot;updateDate&quot;:1463223652418,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:127291,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;0.9&quot;,&quot;maxVersion&quot;:&quot;3.9&quot;},{&quot;id&quot;:&quot;{86c18b42-e466-45a9-ae7a-9b95ba6f5640}&quot;,&quot;minVersion&quot;:&quot;1.7&quot;,&quot;maxVersion&quot;:&quot;2.9&quot;},{&quot;id&quot;:&quot;{3db10fab-e461-4c80-8b97-957ad5f8ea47}&quot;,&quot;minVersion&quot;:&quot;8.0&quot;,&quot;maxVersion&quot;:&quot;9.9&quot;},{&quot;id&quot;:&quot;{a463f10c-3994-11da-9945-000d60ca027b}&quot;,&quot;minVersion&quot;:&quot;0.4+&quot;,&quot;maxVersion&quot;:&quot;2.0+&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:-2}
+1530340859456	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;syncGUID&quot;:&quot;Ri3XyuHvjMRe&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;43.0.1&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;installDate&quot;:1528043928562,&quot;updateDate&quot;:1528043928562,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:24172,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;43.0.1&quot;,&quot;maxVersion&quot;:&quot;43.0.1&quot;}],&quot;targetPlatforms&quot;:[]}
+1530340859457	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1530340859462	DeferredSave.extensions.json	DEBUG	Save changes
+1530340859463	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1530340859463	addons.xpi-utils	DEBUG	Updating add-on states
+1530340859468	addons.xpi-utils	DEBUG	Writing add-ons list
+1530340859794	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1530340859795	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530340859795	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530340859795	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530340859796	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530340859797	addons.manager	DEBUG	Starting provider: GMPProvider
+1530340859947	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530340859948	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530340859948	addons.manager	DEBUG	Starting provider: PluginProvider
+1530340859949	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530340859950	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530340859951	addons.manager	DEBUG	Completed startup sequence
+1530340880621	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1530340880621	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1530340880622	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 28 more
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.QA.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="setup">
@@ -210,16 +298,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'setup')
 data.setCell(0, 2, 'com.QA.Test1')
-data.setCell(0, 3, 12679);
+data.setCell(0, 3, 40769);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'setup')
 data.setCell(1, 2, 'com.QA.Test1')
-data.setCell(1, 3, 9649);
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,7 +334,13 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.QA.Test1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ParallelTestExecute(Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
@@ -256,11 +350,7 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">setup</span>
-                <span class="method-start">11578 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">setup</span>
-                <span class="method-start">31357 ms</span>
+                <span class="method-start">15914 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
